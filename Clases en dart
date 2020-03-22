@@ -1,6 +1,6 @@
 void main() {
   
-  final wolverine = new Heroe('Logan', 'Regeneracion');
+  final wolverine = new Heroe(nombre: 'Logan', poder: 'Regeneracion');
   print(wolverine);
   
 }
@@ -9,11 +9,13 @@ class Heroe {
   String nombre;
   String poder;
   
-  Heroe(String nombre, String poder) {
-    this.nombre = nombre;
-    this.poder = poder;
-  }
+//   Heroe(String nombre, String poder) {
+//     this.nombre = nombre;
+//     this.poder = poder;
+//   }
+  Heroe ({this.nombre, this.poder});
   
+  // las funciones dentro de las clases se les llama metodos
   String toString() {
     return '${this.nombre} - ${this.poder}';
   }
