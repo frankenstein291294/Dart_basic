@@ -1,0 +1,26 @@
+void main() {
+  // tambien la propiedad acepta de tipo dinamic que puede set cualquier valir, pero tambien  podemos restringir el tipo
+  Map<String, dynamic> persona = {
+    'nombre': 'Carlos',
+    'edad': 32,
+    'soltero': true
+  };
+  
+  print(persona['nombre']);
+  print(persona['edad']);
+  
+  
+  Map<int, String> personas = {
+    1: 'Tony',
+    2: 'Peter',
+    9: 'String'
+  };
+  
+  // para agregar un elemento a este mapa agregamos lo siguiente
+  personas.addAll({4: 'Banner'});
+  print(personas);
+  
+  print(personas[1]);
+  
+  
+}
