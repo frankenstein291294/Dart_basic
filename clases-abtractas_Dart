@@ -1,0 +1,33 @@
+void main() {
+  final perro = new Perro();
+  perro.emitirSonido();
+  
+  final gato = new Gato();
+  gato.emitirSonido();
+  
+  
+}
+
+// la clase abtracta es para obligar  a otra clase normal a implemntear las propiedades que tiene una clase abtracta
+abstract class Animal {
+  int patas;
+  
+  void emitirSonido();
+  
+  
+}
+
+class Perro implements Animal {
+  
+  int patas;
+  int colas;
+  
+  void emitirSonido() => print('Guuuuuaaooooo');
+  
+}
+
+class Gato implements Animal {
+  int patas;
+  
+  void emitirSonido() => print('Miiiaauuu');
+}
