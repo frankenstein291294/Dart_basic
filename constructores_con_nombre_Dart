@@ -1,0 +1,28 @@
+  
+  final rowJson = '{ "nombre": "Logan", "poder":"Regeneracion" }';
+  
+  Map parsedJson = json.decode(rowJson);
+  
+//   print(parsedJson);
+
+  
+  final wolverine = new Heroe.fromJson(parsedJson);
+  
+  print(wolverine.nombre);
+  print(wolverine.poder);
+}
+
+
+class Heroe{
+  String nombre; 
+  String poder;
+  
+  // constructor tradicional
+  Heroe(this.nombre, this.poder);
+  
+  // creamos un constructor con nombre
+  Heroe.fromJson( Map parsedJson ) {
+    nombre = parsedJson['nombre'];
+    poder = parsedJson['poder'];
+  }
+}
