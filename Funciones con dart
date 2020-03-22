@@ -1,0 +1,18 @@
+void main() {
+  // funciones en dart
+  
+  saludar();
+  print(cadena('hola','Francisco'));
+  print(cadena2(texto: 'hola2', nombre: 'Francisco2'));
+}
+
+// metodo dynamic
+saludar() {
+  print('hola');
+}
+
+String cadena(String texto, String nombre) {
+  return '$texto $nombre';
+}
+
+String cadena2({String texto, String nombre}) => '$texto $nombre';
