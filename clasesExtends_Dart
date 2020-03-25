@@ -1,0 +1,26 @@
+void main() {
+  final  superman = new Heroe();
+  superman.nombre = 'Clark Ken';
+}
+
+
+class Personaje {
+  String poder;
+  String nombre;
+}
+
+abstract class Heroe extends Personaje {
+  String poder;
+//   String nombre;
+//   int valentia;
+  
+  
+}
+
+
+class Villano extends Personaje {
+  String poder;
+//   String nombre;
+//   int maldad;
+  
+}
